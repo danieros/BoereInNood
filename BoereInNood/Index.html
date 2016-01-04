@@ -1,0 +1,150 @@
+﻿<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- SCROLLS -->
+    <!-- load bootstrap and fontawesome via CDN -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/myVariables.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+
+    <link href="../Content/Buttons.css" rel="stylesheet" />
+    <link href="../Content/app.css" rel="stylesheet" />
+    <link href="../Content/normalize.css" rel="stylesheet" />
+    <link href="../Content/ngNotificationsBar.min.css" rel="stylesheet" />
+
+    <!-- SPELLS -->
+    <!-- load angular and angular route via CDN -->
+    <script src="../Scripts/angular-route.js"></script>
+    <script src="../Scripts/angular-cookies.js"></script>
+    <script src="../Scripts/ngNotificationsBar.min.js"></script>
+    <script src="../Scripts/angular-messages.js"></script>
+
+    <script src="../Scripts/ui-bootstrap-tpls-0.14.3.min.js"></script>
+
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA&amp;sensor=true"></script>
+
+
+    <script src="../Scripts/angular-sanitize.js"></script>
+    <script src="../Scripts/app.js"></script>
+    <script src="../Scripts/controllers.js"></script>
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <link href="../Content/CustomNav.css" rel="stylesheet" />
+
+    <link href="../Content/bootstrap-dialog.min.css" rel="stylesheet" />
+    <script src="../Scripts/bootstrap-dialog.min.js"></script>
+
+
+</head>
+<body ng-app="myApp" class="ng-cloak">
+
+    <!-- HEADER AND NAVBAR -->
+    <header>
+
+        <nav class="navbar navbar-custom" ng-controller="NavController">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+
+                    <img src="Images/Logo1.jpg" class="img-responsive" style="max-width:100px;" />
+
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <!--<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/"><i class="fa fa-home"></i> Home</a></li>-->
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/">Tuis</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#MyContacts">Kontakbesonderhede</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Belangrike vorms<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#PetsRegistered">Doen aansoek</a></li>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#Lost">Kontak ons aanly</a></li>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#Found">Alternatief, vul vorm in</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Algemeen<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#PetCare">Pet care at home</a></li>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#Pricing">Pricing</a></li>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#LostPage">Generate lost poster</a></li>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#LostPage">Share your baby</a></li>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#PetAdoption">List of NSPCA's</a></li>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#WallOfHeroes">Wall of heroes</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Help<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#About">Waaroor gaan dit</a></li>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#FAQ">FAQ</a></li>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#ContactUs">Kontak ons</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ng-show="showlogin"><a data-toggle="collapse" data-target=".navbar-collapse" href="#Register">Sign up</a></li>
+                        <li ng-show="showlogin"><a data-toggle="collapse" data-target=".navbar-collapse" href="#Login">Teken in</a></li>
+                        <li ng-show="showlogout"><a data-toggle="collapse" data-target=".navbar-collapse" href="../Logout.ashx">Teken uit</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+    </header>
+
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+
+
+
+        <div ng-view></div>
+
+        <!--<nav mfb-menu position="br" effect="zoomin" label="hover here"
+             active-icon="ion-edit" resting-icon="ion-plus-round"
+             toggling-method="click">
+            <button mfb-button icon="paper-airplane" label="menu item"></button>
+        </nav>-->
+
+        <br />
+
+        <div class="container body-content">
+            <div class="row row-centered">
+                <div class="col-sm-12">
+                    <a href="https://www.facebook.com/groups/925517180818254/" target="_blank">
+                        <img class="img-responsivesmall" src="../Images/facebook.png" width="50" />
+                    </a>
+                    &nbsp;&nbsp;                    &nbsp;&nbsp;                    &nbsp;&nbsp;
+                    <a href="#ContactUs">
+                        <img class="img-responsivesmall" src="../Images/Email.jpg" width="50" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br />
+        <footer>
+            <p style="color: #000">&copy; 2016 -Boere in Nood - bladsy gedoen deur DS Rossouw - rossouw.daniel@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>
