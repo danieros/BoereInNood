@@ -7,12 +7,272 @@
 
     <notifications-bar class="notifications"></notifications-bar>
 
-  
-    <div>
-        <img src="Images/imageedit_1_8980127811.png" class="img-responsive" style="max-width: 200px;" />
+
+
+    <div id="mycarousal" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators" style="margin-bottom:35px;">
+            <li data-target="#mycarousal" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousal" data-slide-to="1"></li>
+            <li data-target="#mycarousal" data-slide-to="2"></li>
+            <li data-target="#mycarousal" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <!-- 0 slide -->
+            <div class="item active">
+                <div class="carousel-caption">
+                    <div class="carouseltext" data-animation="animated zoomInLeft">
+                        <a href="#MyMap">
+                            Saam kan ons 'n verskil maak
+                            Together we can make a difference
+                        </a>
+                    </div>
+
+
+                    <a href="#MyMap">
+                        <img src="Images/imageedit_1_8980127811.png" class="img-responsive" style="max-width: 200px; display:inline;" />
+                    </a>
+                    <br />
+                </div>
+            </div><!-- /.item -->
+            <!-- First slide -->
+            <div class="item">
+                <div class="carousel-caption">
+                    <div ng-if="userloggedin == true">
+                        <a href="#Temp1">
+                            <h3 style="background-color: forestgreen;" class="icon-container" data-animation="animated bounceInDown">
+                                <span class="glyphicon glyphicon-ok"></span>
+                            </h3>
+                        </a>
+                        <br />
+                        <!--<h3 style="font-size: 14px;" data-animation="animated bounceInLeft">-->
+                        <div class="carouseltext" style="background-color: {{backgroundcolor}} !important;" data-animation="animated bounceInLeft">
+                            <a href="#Temp1" style="text-shadow: none; font-weight: normal;">
+                                Thank you for registering.  Although you can immediately start using all modules the official launch is 1 January 2016.
+                            </a>
+                        </div>
+                        <!--</h3>-->
+                    </div>
+
+                    <div ng-if="userloggedin == false">
+                        <a href="#Register">
+                            <h3 class="icon-container" data-animation="animated bounceInDown" style="background-color: {{backgroundcolor}} !important;">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </h3>
+                        </a>
+                        <br />
+                        <div class="carouseltext" style="background-color: {{backgroundcolor}} !important;" data-animation="animated bounceInLeft">
+                            <a href="#Register" style="text-shadow: none; font-weight: normal;">
+                                Register TODAY and by beginning of next week you will be amazed how much we can assist you and how much fun this web site can be.
+                            </a>
+                        </div>
+                    </div>
+
+                    <a class="btn btn-primary-orange-home" ng-click="showintro()"><span class="glyphicon glyphicon-resize-full" style="color: green;"></span>&nbsp;&nbsp;Show intro &raquo;</a>
+                </div>
+            </div><!-- /.item -->
+            <!-- Second slide -->
+            <div class="item">
+                <div class="carousel-caption">
+                    <a href="#Sponsor" style="text-shadow: none; font-weight: normal;">
+                        <div class="carouseltext" style="background-color: beige; color: black !important;" data-animation="animated zoomInLeft">
+                            <img src="../Images/Sponsor.png" class="img-circle" width="50" />
+                            <br />
+                            Interested in becoming a sponsor?
+                        </div>
+                    </a>
+
+                    <a href="#Agent" style="text-shadow: none; font-weight: normal;">
+                        <div class="carouseltext" style="background-color: beige; color: black !important;" data-animation="animated bounceInLeft">
+                            <img src="../Images/agent.jpg" class="img-circle" width="30" />
+                            <br />
+                            Interested in becoming an agent?
+                        </div>
+                    </a>
+
+                    <a href="#Agent" style="text-shadow: none; font-weight: normal;">
+                        <div class="carouseltext" style="background-color: beige; color: black !important;" data-animation="animated bounceInLeft">
+                            <img src="../Images/Worker.jpg" class="img-circle" width="30" />
+                            <br />
+                            Interested in becoming a foot soldier?
+                        </div>
+                    </a>
+
+                    <a class="btn btn-primary-orange-home" ng-click="showintro()"><span class="glyphicon glyphicon-resize-full" style="color: green;"></span>&nbsp;&nbsp;Show intro &raquo;</a>
+                </div>
+            </div><!-- /.item -->
+            <!-- Third slide -->
+            <div class="item">
+                <div class="carousel-caption">
+                    <div class="carouseltext" style="background-color: {{backgroundcolor}} !important;" data-animation="animated zoomInLeft">
+                        <a href="#MyMap">
+                            We make extensive use of Google maps to limit activity to your community.
+                        </a>
+
+                    </div>
+                    <a href="#MyMap">
+                        <img src="Images/imageedit_1_8980127811.png" class="img-responsive" style="max-width: 200px;" />
+                    </a>
+                    <br />
+                </div>
+            </div><!-- /.item -->
+            <!-- Third slide -->
+            <!--<div class="item">
+                <div class="carousel-caption">
+                    <h3 class="icon-container" data-animation="animated bounceInDown">
+                        <span class="glyphicon glyphicon-heart"></span>
+                    </h3>
+                    <h3 data-animation="animated bounceInUp">
+                        This is the caption for slide 2
+                    </h3>
+                    <a class="btn btn-primary-red" ng-click="messages()" data-animation="animated lightSpeedIn">New messages &raquo;</a>
+                </div>
+            </div>-->
+            <!-- /.item -->
+
+
+        </div><!-- /.carousel-inner -->
+        <!-- Controls -->
+
+
+        <div id="carouselButtons">
+            <button id="previousButton" type="button" class="btn btn-default btn">
+                <span class="glyphicon glyphicon-backward"></span>
+            </button>
+            <button id="playButton" type="button" class="btn btn-default btn">
+                <span class="glyphicon glyphicon-play"></span>
+            </button>
+            <button id="pauseButton" type="button" class="btn btn-default btn">
+                <span class="glyphicon glyphicon-pause"></span>
+            </button>
+            <button id="nextButton" type="button" class="btn btn-default btn">
+                <span class="glyphicon glyphicon-forward"></span>
+            </button>
+        </div>
+
+    </div><!-- /.carousel -->
+
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-sm-6" style="padding-bottom: 10px;">
+                <img src="Images/FNB.jpg" class="img-responsivesmall" />
+                <br /><br />
+                <p>Bethlehem</p>
+                <p>Rek / Acc: 625 229 860 43</p>
+                <p>Tak / Branch: 250 655</p>
+            </div>
+
+            <div class="col-sm-6">
+                <img src="Images/PayPal.png" class="img-responsivesmall" />
+                <br />
+                <br />
+                <p>
+                    nc.schoombee@gmail.com
+                </p>
+                <p>
+                    FNB SWIFT kode: FIRNZAJJ
+                </p>
+                <p>Suid Afrika / South Africa</p>
+            </div>
+        </div>
     </div>
 
 
+    <script>
+        /* Demo Scripts for Bootstrap Carousel and Animate.css article
+* on SitePoint by Maria Antonietta Perna
+*/
+        (function ($) {
+
+
+
+
+
+
+
+
+            $('#previousButton').click(function () {
+                $('#mycarousal').carousel('prev');
+            });
+            $('#nextButton').click(function () {
+                $('#mycarousal').carousel('next');
+            });
+            $('#playButton').click(function () {
+                $('#mycarousal').carousel('cycle');
+            });
+            $('#pauseButton').click(function () {
+                $('#mycarousal').carousel('pause');
+            });
+
+            //$('.carousel-control.left').click(function () {
+            //    $('#myCarousel').carousel('prev');
+            //});
+
+            //$('.carousel-control.right').click(function () {
+            //    $('#myCarousel').carousel('next');
+            //});
+
+            //Function to animate slider captions
+            function doAnimations(elems) {
+                //Cache the animationend event in a variable
+                var animEndEv = 'webkitAnimationEnd animationend';
+
+                elems.each(function () {
+                    var $this = $(this),
+                        $animationType = $this.data('animation');
+                    $this.addClass($animationType).one(animEndEv, function () {
+                        $this.removeClass($animationType);
+                    });
+                });
+            }
+
+            //Variables on page load
+            var $myCarousel = $('#mycarousal'),
+                $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+
+            //Initialize carousel
+            $myCarousel.carousel();
+
+            //Animate captions in first slide on page load
+            doAnimations($firstAnimatingElems);
+
+            //Pause carousel
+            $myCarousel.carousel('pause');
+
+
+            //Other slides to be animated on carousel slide event
+            $myCarousel.on('slide.bs.carousel', function (e) {
+                var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
+                doAnimations($animatingElems);
+            });
+
+        })(jQuery);
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+
+
+
+            //Enable swiping...
+            $(".carousel-inner").swipe({
+                //Generic swipe handler for all directions
+                swipeLeft: function (event, direction, distance, duration, fingerCount) {
+                    $(this).parent().carousel('next');
+                },
+                swipeRight: function () {
+                    $(this).parent().carousel('prev');
+                },
+                //Default is 75px, set to 0 for demo so any distance triggers swipe
+                threshold: 0
+            });
+        });
+    </script>
 
 </div>
 

@@ -23,7 +23,8 @@ function getCookie(cname) {
     return "";
 }
 
-app.controller('mainController', function () {
+app.controller('mainController', function ($scope, $route, $location, $window, $http) {
+    $scope.userloggedin = true;
 });
 
 function setCookie(cname, cvalue, exdays) {

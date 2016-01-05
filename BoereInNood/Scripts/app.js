@@ -1,5 +1,5 @@
 ﻿//var app = angular.module('myApp', ['ngRoute', 'ngCookies', 'angularModalService', 'ngNotificationsBar', 'ngMessages']);
-var app = angular.module('myApp', ['ngRoute', 'ngNotificationsBar']);
+var app = angular.module('myApp', ['ngRoute', 'ngNotificationsBar', 'ui.bootstrap']);
 
 // configure our routes
 app.config(function ($routeProvider) {
@@ -20,6 +20,11 @@ app.config(function ($routeProvider) {
          .when('/About', {
              templateUrl: 'About.html',
              controller: 'aboutController'
+         })
+
+          .when('/FAQ', {
+             templateUrl: 'FAQ.html',
+             controller: 'faqController'
          })
 
                   .when('/ContactUs', {

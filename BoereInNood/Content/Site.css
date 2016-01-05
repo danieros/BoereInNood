@@ -805,7 +805,7 @@ input[type="select"] {
 }
 
 .ulspecial {
-    list-style-image: url('../Images/petpaw.png');
+    list-style-image: url('../Images/telephone.png');
 }
 
 .ulspecialanimal {
@@ -890,7 +890,7 @@ h3 {
 }
 
 .dropdown-menu {
-    font-size: 10px !important;
+    font-size: 12px !important;
 }
 
 
