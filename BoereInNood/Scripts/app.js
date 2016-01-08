@@ -17,6 +17,12 @@ app.config(function ($routeProvider) {
             controller: 'myContactsController'
         })
 
+          // route for the engele
+        .when('/Angels', {
+            templateUrl: 'MuurVanEngele.html',
+            controller: 'muurvanenengeleController'
+        })
+
          .when('/About', {
              templateUrl: 'About.html',
              controller: 'aboutController'

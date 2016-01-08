@@ -51,6 +51,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -206,13 +207,20 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HeroesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserMessagesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\FarmersInNeed.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FarmersInNeed.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -268,10 +276,20 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Models\FarmersInNeed.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>FarmersInNeed.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\PublishProfiles\binsa - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\BoereInNood.pubxml" />
+    <Content Include="Images\1933949_1031529153535345_565457766090250424_n.jpg" />
     <Content Include="Images\ContactPeople.jpg" />
     <Content Include="Images\ContactUs.jpg" />
+    <Content Include="Images\Drought.jpg" />
+    <Content Include="Images\Drought1.jpg" />
     <Content Include="Images\Email.jpg" />
+    <Content Include="Images\Email.png" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\faq.png" />
     <Content Include="Images\FNB.jpg" />
@@ -281,8 +299,10 @@
     <Content Include="Images\LogoGroot.jpg" />
     <Content Include="Images\LogoPng.png" />
     <Content Include="Images\PayPal.png" />
+    <Content Include="Images\PercentageRainOct2015.jpg" />
     <Content Include="Images\telephone.png" />
     <Content Include="Index.html" />
+    <Content Include="MuurVanEngele.html" />
     <Content Include="MyContacts.html" />
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular-messages.js" />
@@ -341,6 +361,14 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\FarmersInNeed.dbml.layout">
+      <DependentUpon>FarmersInNeed.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

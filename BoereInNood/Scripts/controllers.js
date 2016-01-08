@@ -23,9 +23,37 @@ function getCookie(cname) {
     return "";
 }
 
-app.controller('mainController', function ($scope, $route, $location, $window, $http) {
+
+
+app.controller('mainController', function ($scope, notifications, $route, $location, $window, $http) {
     $scope.userloggedin = true;
+
+    
+    $scope.messages = function () {
+        notifications.closeAll();
+        $http.get("/api/UserMessages/GetUserMessages?memberid=1")
+  .success(function (response) {
+      $scope.names = response;
+      notifications.showSuccess(response[0].MessageText);
+  });
+    };
 });
+
+app.controller('muurvanenengeleController', function ($scope, $route, $location, $window, $http) {
+
+ $http.get("/api/Heroes/GetHeroes")
+   .success(function (response) {
+       $scope.names = response;
+       //$scope.nameofspca = response[0].Name;
+       //$scope.office = response[0].Office;
+       //$scope.afterhours = response[0].Afterhours;
+       //$scope.emailaddress = response[0].emailaddress;
+       //$scope.physicaladdress = response[0].physicaladdress;
+   });
+
+});
+
+
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();

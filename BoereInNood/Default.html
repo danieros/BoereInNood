@@ -7,7 +7,13 @@
 
     <notifications-bar class="notifications"></notifications-bar>
 
+    <a href="" ng-click="messages()">
+        <div class="message-header" style="color: white !important; background-color: {{backgroundcolor}} !important;">
+            <span class="glyphicon glyphicon-envelope" style="color: white !important;"></span>&nbsp;Nuwe boodskappe
+        </div>
+    </a>
 
+    <br />
 
     <div id="mycarousal" class="carousel slide" data-ride="carousel">
 
@@ -16,7 +22,6 @@
             <li data-target="#mycarousal" data-slide-to="0" class="active"></li>
             <li data-target="#mycarousal" data-slide-to="1"></li>
             <li data-target="#mycarousal" data-slide-to="2"></li>
-            <li data-target="#mycarousal" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -71,36 +76,6 @@
                             </a>
                         </div>
                     </div>
-
-                    <a class="btn btn-primary-orange-home" ng-click="showintro()"><span class="glyphicon glyphicon-resize-full" style="color: green;"></span>&nbsp;&nbsp;Show intro &raquo;</a>
-                </div>
-            </div><!-- /.item -->
-            <!-- Second slide -->
-            <div class="item">
-                <div class="carousel-caption">
-                    <a href="#Sponsor" style="text-shadow: none; font-weight: normal;">
-                        <div class="carouseltext" style="background-color: beige; color: black !important;" data-animation="animated zoomInLeft">
-                            <img src="../Images/Sponsor.png" class="img-circle" width="50" />
-                            <br />
-                            Interested in becoming a sponsor?
-                        </div>
-                    </a>
-
-                    <a href="#Agent" style="text-shadow: none; font-weight: normal;">
-                        <div class="carouseltext" style="background-color: beige; color: black !important;" data-animation="animated bounceInLeft">
-                            <img src="../Images/agent.jpg" class="img-circle" width="30" />
-                            <br />
-                            Interested in becoming an agent?
-                        </div>
-                    </a>
-
-                    <a href="#Agent" style="text-shadow: none; font-weight: normal;">
-                        <div class="carouseltext" style="background-color: beige; color: black !important;" data-animation="animated bounceInLeft">
-                            <img src="../Images/Worker.jpg" class="img-circle" width="30" />
-                            <br />
-                            Interested in becoming a foot soldier?
-                        </div>
-                    </a>
 
                     <a class="btn btn-primary-orange-home" ng-click="showintro()"><span class="glyphicon glyphicon-resize-full" style="color: green;"></span>&nbsp;&nbsp;Show intro &raquo;</a>
                 </div>
