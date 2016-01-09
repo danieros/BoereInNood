@@ -8,7 +8,7 @@
     <notifications-bar class="notifications"></notifications-bar>
 
     <a href="" ng-click="messages()">
-        <div class="message-header" style="color: white !important; background-color: {{backgroundcolor}} !important;">
+        <div class="message-header">
             <span class="glyphicon glyphicon-envelope" style="color: white !important;"></span>&nbsp;Nuwe boodskappe
         </div>
     </a>
@@ -42,6 +42,7 @@
                         <img src="Images/imageedit_1_8980127811.png" class="img-responsive" style="max-width: 200px; display:inline;" />
                     </a>
                     <br />
+                    <a class="btn btn-primary-orange-home" ng-click="showintro()"><span class="glyphicon glyphicon-resize-full" style="color: green;"></span>&nbsp;&nbsp;Show intro &raquo;</a>
                 </div>
             </div><!-- /.item -->
             <!-- First slide -->
@@ -57,7 +58,8 @@
                         <!--<h3 style="font-size: 14px;" data-animation="animated bounceInLeft">-->
                         <div class="carouseltext" style="background-color: {{backgroundcolor}} !important;" data-animation="animated bounceInLeft">
                             <a href="#Temp1" style="text-shadow: none; font-weight: normal;">
-                                Thank you for registering.  Although you can immediately start using all modules the official launch is 1 January 2016.
+                                Totale skenkings tot op hede in Boere in Nood se bankrekening ontvang:
+                                <br /><span style="font-size:16px; font-weight: bold;">R796 000.00</span>
                             </a>
                         </div>
                         <!--</h3>-->
@@ -65,7 +67,7 @@
 
                     <div ng-if="userloggedin == false">
                         <a href="#Register">
-                            <h3 class="icon-container" data-animation="animated bounceInDown" style="background-color: {{backgroundcolor}} !important;">
+                            <h3 class="icon-container" data-animation="animated bounceInDown">
                                 <span class="glyphicon glyphicon-user"></span>
                             </h3>
                         </a>
@@ -83,15 +85,36 @@
             <!-- Third slide -->
             <div class="item">
                 <div class="carousel-caption">
-                    <div class="carouseltext" style="background-color: {{backgroundcolor}} !important;" data-animation="animated zoomInLeft">
+                    <div class="carouseltext" data-animation="animated zoomInLeft">
                         <a href="#MyMap">
-                            We make extensive use of Google maps to limit activity to your community.
+                            Statistieke
                         </a>
+                    </div>
+                    <div class="carouseltext" data-animation="animated bounceInLeft" style="background-color: white !important; color: black !important; text-shadow: none !important;">
+                        <ul class="ulspecial1">
+                            <li>Alreeds meer as 1000 aansoeke landwyd</li>
+
+                            <li>
+                                Meer as 250 boere gehelp
+                            </li>
+
+                            <li>
+                                Meer as 2350 groot 1.2m ronde bale en 1500 klein bale is na boere geskuif
+                            </li>
+
+                            <li>
+                                Meer as 940 ton in groot bale
+                            </li>
+
+                            <li>
+                                Ongeveer 37.5 ton in klein bale
+                            </li>
+
+                            <li>  Vragte geskuif na
+                                <a href="#afegelewer"><img src="Images/RSA.jpg" /> </a></li>
+                        </ul>
 
                     </div>
-                    <a href="#MyMap">
-                        <img src="Images/imageedit_1_8980127811.png" class="img-responsive" style="max-width: 200px;" />
-                    </a>
                     <br />
                 </div>
             </div><!-- /.item -->

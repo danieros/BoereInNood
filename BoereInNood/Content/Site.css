@@ -787,11 +787,11 @@ input[type="select"] {
 }
 
 .bootstrap-dialog.type-primary .modal-header {
-    background-color: #0E46A7 !important;
+    background-color: #317a36 !important;
 }
 
 .btn-dialogclose {
-    background-color: #0E46A7;
+    background-color: #317a36;
     color: #fff;
 }
 
@@ -806,6 +806,11 @@ input[type="select"] {
 
 .ulspecial {
     list-style-image: url('../Images/telephone.png');
+}
+
+.ulspecial1 {
+    list-style-image: url('../Images/hats.png');
+    text-align: left !important;
 }
 
 .ulspecialanimal {

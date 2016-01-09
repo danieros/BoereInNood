@@ -1,0 +1,315 @@
+﻿<div class="loading-dialog" data-loading>
+</div>
+
+<form ng-submit="processForm()" name="myForm" role="form" novalidate>
+    <div class="container body-content">
+
+        <div class="mypage-headersmall">
+            <img src="../Images/ContactUs.jpg" class="img-circle" height="40" />
+            Kontak ons
+        </div>
+        <br />
+
+        <div class="form-horizontal">
+            <div class="jumbotron" style="background-color: {{backgroundcolor}} !important;">
+
+                As jy enige vrae het sal ons ons so vinnig as moontlik reageer.
+                <br /><br />
+
+                <!--Datum-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Datum</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Naam en van-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Jou naam</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Kontak nommer-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Kontak nommer</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Email-->
+                <div class="form-group">
+                    <label for="MainContent_Email" class="col-md-4 control-label">Email adres</label>
+                    <div class="col-md-8">
+                        <input placeholder="Enter email adres in regte formaat" type="email" name="email" ng-model="formData.email" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.email.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou email adres ingetik nie</div>
+                        <div ng-message="email">Jou email adres is nie reg nie</div>
+                    </div>
+                </div>
+
+                <!--Plaas naam-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Plaas naam</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Distrik-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Distrik</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Provinsie-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Provinsie</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Boere verening-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Boere vereniging</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Boere verening voorsitter-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Boere vereniging voorsitter</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Boere verening voorsitter nommer-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Boere vereniging voorsitter nommer</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Tipe vee-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Tipe vee</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Hoeveelheid vee-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Hoeveelheid vee</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Voer U reeds self-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Voer u reeds self</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Indien ja hoe lank-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Indien ja hoe lank</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Het u al enige vrektes gehad-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Het u al enige vrektes gehad</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Indien ja hoeveel-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Indien ja hoeveel</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Enige brande gehad-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Enige brande gehad</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Voer optel-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Kan u self voer op 'n afgesette verspreiding-punt gaan laai?</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <!--Is u in staat om nog self te voer-->
+                <div class="form-group">
+                    <label for="username" class="col-md-4 control-label">Is u in staat om nog self te voer?</label>
+                    <div class="col-md-8">
+                        <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
+                    </div>
+
+                    <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="Message" class="col-md-4 control-label">Enige ander inligting wat van toepassing mag wees?</label>
+                    <div class="col-md-8">
+                        <textarea placeholder="As ons kan help sal ons!" cols="10" rows="7" class="form-control" name="mymessage" ng-model="formData.mymessage" required></textarea>
+                    </div>
+
+                    <!--<pre>myForm.mypasssword.$error = {{ myForm.mypasssword.$error | json }}</pre>-->
+
+                    <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.mymessage.$error" style="color:yellow; margin-left: 15px;" role="alert">
+                        <div ng-message="required">Jy het nie 'n boodskap ingetik nie</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-4 col-md-8">
+                        <button type="submit" ng-click="submitted=true" style="width:210px;" class="btn-lgsmall-fontsmall btn-primary-orange-slider">Stuur boodskap</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!--<pre>
+                {{ formData }}
+            </pre>-->
+
+        </div>
+    </div>
+</form>

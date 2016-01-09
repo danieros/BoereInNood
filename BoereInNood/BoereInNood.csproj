@@ -245,9 +245,11 @@
     <Content Include="Content\normalize.css" />
     <Content Include="Content\ui-bootstrap-csp.css" />
     <Content Include="Default.html" />
+    <Content Include="DoenAansoek.html" />
     <Content Include="FAQ.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GebiedeOndersteun.html" />
     <Content Include="Global.asax" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
@@ -276,6 +278,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Images\hats.png" />
+    <Content Include="Images\RSA.jpg" />
     <Content Include="Models\FarmersInNeed.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>FarmersInNeed.designer.cs</LastGenOutput>

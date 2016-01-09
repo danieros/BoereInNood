@@ -17,6 +17,18 @@ app.config(function ($routeProvider) {
             controller: 'myContactsController'
         })
 
+         // route for the VoerAfgelewer
+        .when('/afegelewer', {
+            templateUrl: 'GebiedeOndersteun.html',
+            controller: 'gebiedeOndersteunController'
+        })
+
+        // route for the doen Aansoek
+        .when('/DoenAansoek', {
+            templateUrl: 'DoenAansoek.html',
+            controller: 'doenaansoekController'
+        })
+
           // route for the engele
         .when('/Angels', {
             templateUrl: 'MuurVanEngele.html',
