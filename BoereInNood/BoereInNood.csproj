@@ -234,6 +234,7 @@
     <Content Include="Content\animate.css" />
     <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap-dialog.min.css" />
+    <Content Include="Content\bootstrap-switch.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -244,8 +245,38 @@
     <Content Include="Content\ngNotificationsBar.min.css" />
     <Content Include="Content\normalize.css" />
     <Content Include="Content\ui-bootstrap-csp.css" />
+    <Content Include="data1\images\001.jpg" />
+    <Content Include="data1\images\002.jpg" />
+    <Content Include="data1\images\003.jpg" />
+    <Content Include="data1\images\004.jpg" />
+    <Content Include="data1\images\005.jpg" />
+    <Content Include="data1\images\006.jpg" />
+    <Content Include="data1\images\12495184_10153305716421630_7724512170650291103_n.jpg" />
+    <Content Include="data1\images\12540646_10153305828111630_8947120611679925979_n.jpg" />
+    <Content Include="data1\images\12552752_10153305916706630_4281770398233611236_n.jpg" />
+    <Content Include="data1\tooltips\001.jpg" />
+    <Content Include="data1\tooltips\002.jpg" />
+    <Content Include="data1\tooltips\003.jpg" />
+    <Content Include="data1\tooltips\004.jpg" />
+    <Content Include="data1\tooltips\005.jpg" />
+    <Content Include="data1\tooltips\006.jpg" />
+    <Content Include="data1\tooltips\12495184_10153305716421630_7724512170650291103_n.jpg" />
+    <Content Include="data1\tooltips\12540646_10153305828111630_8947120611679925979_n.jpg" />
+    <Content Include="data1\tooltips\12552752_10153305916706630_4281770398233611236_n.jpg" />
     <Content Include="Default.html" />
     <Content Include="DoenAansoek.html" />
+    <Content Include="engine1\arrows.png" />
+    <Content Include="engine1\bg.png" />
+    <Content Include="engine1\bullet.png" />
+    <Content Include="engine1\jquery.js" />
+    <Content Include="engine1\pause.png" />
+    <Content Include="engine1\play.png" />
+    <Content Include="engine1\script.js" />
+    <Content Include="engine1\style.css" />
+    <Content Include="engine1\style.mod.css" />
+    <Content Include="engine1\triangle.png" />
+    <Content Include="engine1\wowslider.js" />
+    <Content Include="engine1\wowslider.mod.js" />
     <Content Include="FAQ.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -278,8 +309,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Images\Donations.png" />
     <Content Include="Images\hats.png" />
     <Content Include="Images\RSA.jpg" />
+    <Content Include="MessagesArgief.html" />
     <Content Include="Models\FarmersInNeed.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>FarmersInNeed.designer.cs</LastGenOutput>
@@ -312,6 +345,7 @@
     <Content Include="Scripts\angular-messages.js" />
     <Content Include="Scripts\angular-sanitize.js" />
     <Content Include="Scripts\bootstrap-dialog.min.js" />
+    <Content Include="Scripts\bootstrap-switch.js" />
     <Content Include="Scripts\controllers.js" />
     <Content Include="Scripts\jquery.touchSwipe.min.js" />
     <Content Include="Scripts\myVariables.js" />

@@ -6,14 +6,14 @@
 
         <div class="mypage-headersmall">
             <img src="../Images/ContactUs.jpg" class="img-circle" height="40" />
-            Kontak ons
+            Doen aansoek
         </div>
         <br />
 
         <div class="form-horizontal">
             <div class="jumbotron" style="background-color: {{backgroundcolor}} !important;">
 
-                As jy enige vrae het sal ons ons so vinnig as moontlik reageer.
+               Hierdie vorm word nog getoets so moet asseblief nie gebruik voordat dit afgeteken is nie.
                 <br /><br />
 
                 <!--Datum-->
@@ -32,7 +32,7 @@
 
                 <!--Naam en van-->
                 <div class="form-group">
-                    <label for="username" class="col-md-4 control-label">Jou naam</label>
+                    <label for="username" class="col-md-4 control-label">Jou naam en van</label>
                     <div class="col-md-8">
                         <input placeholder="Tik asseblief jou naam in" type="text" name="nameofuser" ng-model="formData.nameofuser" class="form-control" required>
                     </div>
@@ -40,7 +40,7 @@
                     <!--<pre>myForm.user.$error = {{ myForm.user.$error | json }}</pre>-->
 
                     <div ng-if="myForm.nameofuser.$dirty || submitted" ng-messages="myForm.nameofuser.$error" style="color:yellow; margin-left: 15px;" role="alert">
-                        <div ng-message="required">Jy het nie jou naam ingetik nie</div>
+                        <div ng-message="required">Jy het nie jou naam en van ingetik nie</div>
                     </div>
                 </div>
 

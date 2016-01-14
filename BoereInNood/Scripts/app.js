@@ -17,6 +17,12 @@ app.config(function ($routeProvider) {
             controller: 'myContactsController'
         })
 
+         // route for the boodskappe argief
+        .when('/MessageArchive', {
+            templateUrl: 'MessagesArgief.html',
+            controller: 'messagesArgiefController'
+        })
+
          // route for the VoerAfgelewer
         .when('/afegelewer', {
             templateUrl: 'GebiedeOndersteun.html',
@@ -41,14 +47,14 @@ app.config(function ($routeProvider) {
          })
 
           .when('/FAQ', {
-             templateUrl: 'FAQ.html',
-             controller: 'faqController'
-         })
+              templateUrl: 'FAQ.html',
+              controller: 'faqController'
+          })
 
                   .when('/ContactUs', {
-             templateUrl: 'ContactUs.html',
-             controller: 'contactusController'
-         })
+                      templateUrl: 'ContactUs.html',
+                      controller: 'contactusController'
+                  })
 
         // route for the contact page
         .when('/dogbreedselect', {
@@ -58,3 +64,31 @@ app.config(function ($routeProvider) {
 
 
 });
+
+app.directive('bootstrapSwitch', [
+    function() {
+        return {
+            restrict: 'A',
+            require: '?ngModel',
+            link: function(scope, element, attrs, ngModel) {
+                element.bootstrapSwitch();
+
+                element.on('switchChange.bootstrapSwitch', function(event, state) {
+                    if (ngModel) {
+                        scope.$apply(function() {
+                            ngModel.$setViewValue(state);
+                        });
+                    }
+                });
+
+                scope.$watch(attrs.ngModel, function(newValue, oldValue) {
+                    if (newValue) {
+                        element.bootstrapSwitch('state', true, true);
+                    } else {
+                        element.bootstrapSwitch('state', false, true);
+                    }
+                });
+            }
+        };
+    }
+]);

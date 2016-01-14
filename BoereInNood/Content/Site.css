@@ -76,7 +76,7 @@ body {
 
 .message-header {
     border: 1px solid #fff;
-    background-color: red;
+    background-color: #f48a26;
     color: black;
     font-weight: bold !important;
     text-align: center;
@@ -703,10 +703,14 @@ btn-primary-green-verysmall {
 
 
 ul {
-    list-style: none;
+    list-style: disc;
     /*margin-left: 0;
     padding-left: 1em;
     text-indent: -1em;*/
+}
+
+p{
+    font-size: 15px !important;
 }
 
 .editimage {
@@ -719,7 +723,7 @@ ul {
 
 .modal-body {
     color: black;
-    height: 260px;
+    height: 300px;
 }
 
 .login-dialog .modal-body {
@@ -801,7 +805,7 @@ input[type="select"] {
 }
 
 .bootstrap-dialog .bootstrap-dialog-message {
-    font-size: 11px !important;
+    font-size: 12px !important;
 }
 
 .ulspecial {

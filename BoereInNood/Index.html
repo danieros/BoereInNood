@@ -30,7 +30,8 @@
     <script src="../Scripts/ui-bootstrap-tpls-0.14.3.min.js"></script>
     <script src="Scripts/jquery.touchSwipe.min.js"></script>
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA&amp;sensor=true"></script>
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA&amp;sensor=true"></script>-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA"></script>
 
 
     <script src="../Scripts/angular-sanitize.js"></script>
@@ -44,6 +45,13 @@
     <link href="Content/animate.css" rel="stylesheet" />
     <link href="Content/mycarousel.css" rel="stylesheet" />
     <script src="Scripts/ngNotificationsBar.min.js"></script>
+
+    <script src="Scripts/bootstrap-switch.js"></script>
+    <link href="Content/bootstrap-switch.css" rel="stylesheet" />
+
+    <!-- Start WOWSlider.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <!-- End WOWSlider.com HEAD section -->
 
 </head>
 <body ng-app="myApp" class="ng-cloak">
@@ -61,9 +69,10 @@
                     </button>
 
 
-                    <a href="#/"><img src="Images/Logo1.jpg" class="img-responsive" style="max-width:100px;" /></a>
+                    <a href="#/"><img src="Images/Logo1.jpg" class="img-responsive" style="max-width:100px; border: none;" /></a>
 
                 </div>
+
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <!--<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#/"><i class="fa fa-home"></i> Home</a></li>-->
@@ -80,7 +89,9 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown">Algemeen<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#Angels">Muur van Engele</a></li>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#Angels">Skenkers</a></li>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#afegelewer">Voer afgelewer</a></li>
+                                <!--<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#afegelewer">Boodskappe argief</a></li>-->
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -139,7 +150,7 @@
         </div>
         <br />
         <footer>
-            <p style="color: #000; font-size: 12x;">&copy; 2016 - Boere in Nood - bladsy gedoen deur rossouw.daniel@gmail.com maar alle nie tegniese navrae sal na die Boere in Nood admin gestuur word.</p>
+            <p style="color: #000; font-size: 12px;">&copy; 2016 - Boere in Nood <br /> geskenk deur <b>rossouw.daniel@gmail.com</b> </p>
         </footer>
     </div>
 </body>

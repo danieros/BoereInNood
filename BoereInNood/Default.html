@@ -7,6 +7,28 @@
 
     <notifications-bar class="notifications"></notifications-bar>
 
+    <div style="padding-bottom:10px; text-align: center; color: black;">
+     {{Taal}} <input type="checkbox" ng-model="mystate" bootstrap-switch name="my-checkbox" />
+    </div>
+
+    <!-- Start WOWSlider.com BODY section -->
+    <div id="wowslider-container1">
+        <div class="ws_images">
+            <ul>
+                <li><img src="data1/images/12495184_10153305716421630_7724512170650291103_n.jpg" alt="Amper klaar vasgemaak. 30 bale oppad na 3 Boere toe by Koppies" title="Amper klaar vasgemaak. 30 bale oppad na 3 Boere toe by Koppies" id="wows1_0" />Deur Carina Swartz geplaas: 15 Januarie 2016</li>
+                <li><a href="http://wowslider.net"><img src="data1/images/12540646_10153305828111630_8947120611679925979_n.jpg" alt="jquery slider" title="Vir die wat nie weet wie JP en Natalie Leca-Vermaak is nie ... hulle was ons heel eerste engele wat vir ons gratis vervoer het." id="wows1_1" /></a>Deur Carina Swarz geplaas - 14 Januarie 2016</li>
+                <li><img src="data1/images/12552752_10153305916706630_4281770398233611236_n.jpg" alt="Laai nou vir 5 Boere van Tosca. Volgende een staan en wag..." title="Laai nou vir 5 Boere van Tosca. Volgende een staan en wag..." id="wows1_2" />Deur Carina Swartz geplaas: 15 Januarie 2016</li>
+            </ul>
+        </div>
+        <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.6</div>
+        <div class="ws_shadow"></div>
+    </div>
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
+    <!-- End WOWSlider.com BODY section -->
+
+    <br />
+
     <a href="" ng-click="messages()">
         <div class="message-header">
             <span class="glyphicon glyphicon-envelope" style="color: white !important;"></span>&nbsp;Nuwe boodskappe
@@ -42,13 +64,18 @@
                         <img src="Images/imageedit_1_8980127811.png" class="img-responsive" style="max-width: 200px; display:inline;" />
                     </a>
                     <br />
-                    <a class="btn btn-primary-orange-home" ng-click="showintro()"><span class="glyphicon glyphicon-resize-full" style="color: green;"></span>&nbsp;&nbsp;Show intro &raquo;</a>
+                    <a class="btn btn-primary-orange-home" ng-click="showintro()"><span class="glyphicon glyphicon-resize-full" style="color: green;"></span>&nbsp;&nbsp;Wys intro &raquo;</a>
                 </div>
             </div><!-- /.item -->
             <!-- First slide -->
             <div class="item">
                 <div class="carousel-caption">
-                    <div ng-if="userloggedin == true">
+                    <div>
+
+
+
+                        <br />
+
                         <a href="#Temp1">
                             <h3 style="background-color: forestgreen;" class="icon-container" data-animation="animated bounceInDown">
                                 <span class="glyphicon glyphicon-ok"></span>
@@ -65,21 +92,8 @@
                         <!--</h3>-->
                     </div>
 
-                    <div ng-if="userloggedin == false">
-                        <a href="#Register">
-                            <h3 class="icon-container" data-animation="animated bounceInDown">
-                                <span class="glyphicon glyphicon-user"></span>
-                            </h3>
-                        </a>
-                        <br />
-                        <div class="carouseltext" style="background-color: {{backgroundcolor}} !important;" data-animation="animated bounceInLeft">
-                            <a href="#Register" style="text-shadow: none; font-weight: normal;">
-                                Register TODAY and by beginning of next week you will be amazed how much we can assist you and how much fun this web site can be.
-                            </a>
-                        </div>
-                    </div>
 
-                    <a class="btn btn-primary-orange-home" ng-click="showintro()"><span class="glyphicon glyphicon-resize-full" style="color: green;"></span>&nbsp;&nbsp;Show intro &raquo;</a>
+                    <a class="btn btn-primary-orange-home" ng-click="showintro()"><span class="glyphicon glyphicon-resize-full" style="color: green;"></span>&nbsp;&nbsp;Wys intro &raquo;</a>
                 </div>
             </div><!-- /.item -->
             <!-- Third slide -->
@@ -153,6 +167,11 @@
         </div>
 
     </div><!-- /.carousel -->
+
+    <div style="text-align: center;">
+        <a class="twitter-timeline" href="https://twitter.com/NJSAgri" data-widget-id="687633813695000576">Tweets by @NJSAgri</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
 
     <div class="jumbotron">
         <div class="row">
